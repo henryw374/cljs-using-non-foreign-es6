@@ -1,6 +1,6 @@
 (ns jstest.cljs-entrypoint
   ;what goes here to get the es6 file?
-  (:require ["es6demo" :as foo])
+  (:require [jstest.es6demoexport :as foo])
   )
 
 (def v (-> (.-Foo foo) (.bar)))

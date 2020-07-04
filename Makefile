@@ -1,5 +1,5 @@
 cljs:
-	clj -m cljs.main -c jstest.cljs-entrypoint
+	clj -m cljs.main -O advanced -c jstest.cljs-entrypoint -o cadv.js
 es6:
 	java -jar closure-compiler-v20200517.jar \
 	 --warning_level=QUIET \
@@ -7,5 +7,6 @@ es6:
 	  --dependency_mode=PRUNE \
 	  -O ADVANCED \
 	  --js "./src/jstest/**.js" \
+	  --js "./closure-library-20200614/closure/**.js" \
 	  --entry_point="./src/jstest/js-entrypoint.js" \
 	  --js_output_file adv.js

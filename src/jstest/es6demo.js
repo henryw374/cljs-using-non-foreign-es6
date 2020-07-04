@@ -1,3 +1,5 @@
+ goog.provide('jstest.es6demo');
+ goog.declareModuleId('jstest.es6demo');
  const Foo = function(){ }
  
  var p = Foo.prototype;

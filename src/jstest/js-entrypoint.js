@@ -1,5 +1,6 @@
-import * as foo from "./es6demo.js"
-
-var v = foo.Foo.bar()
+goog.module('mark.foolan')
+//import * as foo from "./es6demo.js"
+const es6demo = goog.require('jstest.es6demoexport')
+const c = es6demo.Foo.bar()
  
-console.log('hello ' + v )
+console.log('hello ' + c );
