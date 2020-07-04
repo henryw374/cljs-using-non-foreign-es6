@@ -1,5 +1,5 @@
 cljs:
-	clj -m cljs.main -O advanced -c jstest.cljs-entrypoint -o cadv.js
+	clj -m cljs.main -O advanced -o cadv.js -c jstest.cljs-entrypoint 
 es6:
 	java -jar closure-compiler-v20200517.jar \
 	 --warning_level=QUIET \

@@ -1,3 +1,7 @@
 {:paths ["src"]
- :deps {org.clojure/clojurescript {:mvn/version "1.10.773"}}}
+ :deps  {org.clojure/clojurescript {;:mvn/version "1.10.773"
+                                    ;:local/root "../clojurescript"
+                                    :git/url "https://github.com/henryw374/clojurescript.git"
+                                    :sha "745fe924a43f426a4eb86f6b9df04fc463320b27"
+                                    }}}
 
